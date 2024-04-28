@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Règles du jeu - MonoPolytech</title>
+    <link rel="stylesheet" href="rules.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kabel:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="game.html" class="back-button">Retour</a>
+    <br /><br />
+    <div class="title-container">
+      <h1>Les Règles du jeu</h1>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <h2><u>Matériel</u></h2>
+    <ul>
+      <li>1 plateau</li>
+      <li>1 pion par joueur (ce que vous avez sous la main)</li>
+      <li>2 dés</li>
+      <li>Cartes de jeux numérotées de 1 à 8 (pique/coeur/carreau/trèfle)</li>
+      <li>1 ordinateur ou téléphone avec le jeu MonoPolytech</li>
+    </ul>
+    <br />
+    <hr />
+    <br />
+    <div>Chaque joueur choisit un pion et le pose sur la case départ.</div>
+
+    <h2><u>Comment jouer ?</u></h2>
+    <div>
+      <u>Comment gagner ?</u><br /><br />
+      Il faut être le <strong>dernier joueur qui puisse jouer</strong
+      ><br /><br />
+      Comment faire : Organiser des soirées et faire boire du breuvage aux
+      joueurs qui atterrissent chez vous. Organisez toutes les soirées d’un même
+      groupe de couleur pour augmenter les gorgées de breuvage. <br /><br />
+      <u>Qui joue en premier ?</u><br /><br />
+      Chaque joueur lance les deux dés. Celui qui fait le plus petit score
+      commence la partie. <br /><br />
+      <u>Quand c'est votre tour :</u>
+      <ol>
+        <li>Lancez les deux dés.</li>
+        <li>
+          Bougez votre pion d’autant de cases que le nombre de points indiqué
+          sur les dés et dans le sens des aiguilles d’une montre.
+        </li>
+        <li>
+          La case où vous vous arrêterez déterminera ce que vous avez à faire.
+          <span style="color: green"
+            >Voir la rubrique « Types de Cases » ci-dessous.
+          </span>
+        </li>
+        <li>
+          Si vous passez par ou vous arrêtez sur la case DÉPART, vous devez
+          finir votre verre.
+        </li>
+        <li>
+          Si vous faites un double aux dés, effectuez les opérations habituelles
+          sur la case où vous vous arrêtez puis relancez les dés (étapes 1 à
+          4).<br />
+          Attention ! Si vous faites trois doubles de suite, rendez-vous
+          immediatement au Stand PLS.
+        </li>
+        <li>
+          Lorsque vous avez terminé votre tour, donnez les dés au joueur situé
+          sur votre gauche.
+        </li>
+      </ol>
+    </div>
+
+    <h2><u>Types de cases</u></h2>
+    <div>
+      <u>Soirée n'appartenant à personne</u><br /><br />
+      Il existe trois types de soirées :
+    </div>
+
+    <div class="image-container">
+      <div class="image-item">
+        <img src="media\Event.PNG" alt="Event" width="100" height="150" />
+        <div>Event</div>
+      </div>
+      <div class="image-item">
+        <img src="media\Rezo.PNG" alt="Rezo" width="100" height="150" />
+        <div>Rézo</div>
+      </div>
+      <div class="image-item">
+        <img src="media\WED.PNG" alt="Week-End" width="100" height="150" />
+        <div>Week-End</div>
+      </div>
+    </div>
+
+    <div>
+      Vous pouvez <strong>organiser</strong> la soirée sur laquelle vous vous
+      arrêtez en buvant le <strong>nombre de gorgées indiqué</strong> sur la
+      case du plateau de jeu. <br />
+      Lorsque vous organisez des soirées, vous devez penser à organiser, si
+      possible, les autres soirées du même groupe de couleur. Par exemple : si
+      vous organisez un Event vert, vous devez essayer d'organiser les 2 autres
+      Events verts au cours de la partie. <br />
+      Posséder un groupe de couleur <strong>double</strong> le nombre des
+      gorgées que les autres joueurs ont à prendre quand ils atterrissent sur
+      une de ces soirées. <br /><br />
+      <u>Soirée déjà organisée par un autre joueur</u><br /><br />
+      Si vous vous arrêtez sur une soirée qui est organisée par un autre joueur,
+      il peut vous demander de <strong>boire du breuvage</strong>. Le nombre de
+      gorgées est indiqué sur la case du plateau de jeu. <br /><br />
+      <span style="color: red"
+        >Important : le joueur qui est propriétaire de la case sur laquelle vous
+        vous arrêtez doit vous réclamer de boire avant que le joueur suivant ne
+        lance les dés à son tour. S’il oublie de vous demander, vous n’êtes plus
+        obligé de boire ! <br />
+        Si vous faites un double vous êtes obligé de boire le loyer de la case
+        adversaire avant de relancer les dés.</span
+      ><br /><br />
+      <img
+        src="media\Event.PNG"
+        alt="Event"
+        width="100"
+        height="150"
+        style="float: left; margin-right: 10px"
+      />
+      <u>Event</u><br /><br />
+      Le nombre de gorgées pour un Event simple est indiqué sur la case
+      correspondante. Ces gorgées sont doublées si le propriétaire organise tous
+      les Events d’un même groupe de couleur.
+    </div>
+
+    <div style="clear: both"></div>
+    <div>
+      <img
+        src="media\Rezo.PNG"
+        alt="Rezo"
+        width="100"
+        height="150"
+        style="float: left; margin-right: 10px"
+      />
+      <u>Rézo</u><br /><br />
+      Le nombre de gorgées dépend du nombre de soirées Rézo que vous possédez.
+      <br />
+      <table>
+        <tr>
+          <td>Nombre de Rézo</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Gorgées</td>
+          <td>5</td>
+          <td>10</td>
+          <td>15</td>
+          <td>20</td>
+        </tr>
+      </table>
+    </div>
+    <div style="clear: both"></div>
+    <div>
+      <img
+        src="media\WED.PNG"
+        alt="Week-End"
+        width="100"
+        height="150"
+        style="float: left; margin-right: 10px"
+      />
+      <u>Week-End</u><br /><br />
+      Pour connaître le montant du loyer, lancez un dé et multipliez le résultat
+      par <strong>2</strong>. Si vous possédez les deux compagnies de Week-End,
+      multipliez le résultat par <strong>5</strong> ! <br /><br />
+      <span style="color: red"
+        >Important : vous devez boire les gorgées dans le verre du joueur à qui
+        vous devez le loyer.</span
+      >
+    </div>
+    <div style="clear: both"></div>
+    <div>
+      <img
+        src="media\Chance.PNG"
+        alt="Chance"
+        width="100"
+        height="150"
+        style="float: left; margin-right: 10px"
+      />
+      <img
+        src="media\BDE.PNG"
+        alt="BDE"
+        width="100"
+        height="150"
+        style="float: left; margin-right: 10px"
+      />
+      <u>Chance - BDE</u><br /><br />
+      Vous devez tirer une carte sur l’application en choisissant le bouton
+      correspondant, suivre les instructions de la carte. <br /><br />
+      Si vous tirez une carte <em>Vous êtes sobre</em>,prenez une carte 7 ou 8
+      de carreau ou de pique restez sur le côté du plateau, vous pouvez la
+      garder jusqu’à ce que vous décidiez de l’utiliser.
+    </div>
+
+    <div style="clear: both"></div>
+    <div>
+      <img
+        src="media\Buffalo.PNG"
+        width="100"
+        height="150"
+        alt="Buffalo"
+        style="float: left; margin-right: 10px"
+      />
+      <u>Buffalo - Charrette</u><br /><br />
+      Si vous vous arrêtez sur une de ces cases, buvez le nombre de gorgées
+      indiqué.
+    </div>
+    <div style="clear: both"></div>
+    <div>
+      <img
+        src="media\FEDERP.PNG"
+        alt="FERDERP"
+        width="100"
+        height="100"
+        style="float: left; margin-right: 10px"
+      />
+      <img
+        src="media\Stand PLS.PNG"
+        alt="Stand PLS"
+        width="100"
+        height="100"
+        style="float: left; margin-right: 10px"
+      />
+      <u>FEDERP - Stand PLS</u><br /><br />
+      Si vous vous arrêtez sur cette case, vous devez bouger votre pion sur la
+      case <strong>Stand PLS</strong>. <br />
+      <strong>Important</strong> : vous <strong>ne finissez pas</strong> votre
+      verre si vous allez sur la case Stand PLS en passant par la case DÉPART.
+      Si vous êtes envoyé au Stand PLS, votre tour est terminé vous devez donner
+      les dés au joueur suivant ! <br /><br />
+      Vous êtes envoyé au Stand PLS si : <br />
+      <ul>
+        <li>
+          vous tirez une carte chance ou BDE qui vous indique d'aller au Stand
+          PLS.
+        </li>
+        <li>vous faites trois doubles à la suite aux dés.</li>
+      </ul>
+      <strong>Comment sortir du Stand PLS ?</strong><br /><br />
+      Vous avez trois possibilités : <br />
+      <ul>
+        <li>
+          <strong>Boire 5 gorgées</strong> au début du tour suivant. Vous pouvez
+          alors lancer les dés et bouger votre pion normalement.
+        </li>
+        <li>
+          <strong>Utiliser une carte <em>Vous êtes sobre</em></strong> si vous
+          en possédez une <i> (cartes 7 et 8 de carreau ou pique)</i>. Une fois
+          utilisée, lancez les dés et bougez votre pion.
+        </li>
+        <li>
+          <strong>Attendre trois tours</strong> en lançant les dés à chaque tour
+          pour essayer de faire un double. Si vous faites un double, sortez du
+          Stand PLS en utilisant le lancer de dés pour avancer. Si, après les
+          trois tours, vous n'avez pas fait de double, buvez 5 gorgées et bougez
+          votre pion suivant votre lancer de dés.
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div>
+    <div>
+      <img
+        src="media\Quart d'heure Water.PNG"
+        alt="Water"
+        width="100"
+        height="100"
+        style="float: left; margin-right: 10px"
+      />
+      <u>Quart d'Heure Water</u><br /><br />
+      Relax ! Rien de mauvais (ou de bon) ne peut vous arriver sur cette case !
+      Vous pouvez vous reposer et boire un verre d’eau en attendant le prochain
+      tour et continuer vos transactions normalement (percevoir des loyers…).
+    </div>
+
+    <div style="clear: both"></div>
+    <div>
+      <u> Propriété que vous possédez</u><br /><br />
+      Rien de spécial !
+    </div>
+
+    <div style="clear: both"></div>
+
+    <h2><u>Au secours !! Je vais vomir !!</u></h2>
+    <div>
+      Si vous ne pouvez plus boire au risque d’exploser et que vous devez vous
+      acquitter d'une dette auprès d'un autre joueur, vous pouvez
+      <strong>lui donner une propriété de votre choix</strong>. Si vous n’en
+      avez plus, vous êtes déclaré <strong>IVRE</strong> et
+      <strong>vous êtes éliminé</strong> !
+    </div>
+
+    <br />
+    <hr />
+    <br />
+    <h2><u>Variantes</u></h2>
+    <div>
+      <u>Echanger</u><br /><br />
+      Les règles de base du jeu ne changent pas. <br /><br />
+      Sur la case FEDERP, vous lancez un dé, si vous faites 5 ou 6 vous pouvez
+      proposer <strong>un échange</strong> aux autres joueurs, sinon allez au
+      Stand PLS. S’il n’y a pas d’échange, il ne se passe rien.<br /><br />
+      <u>Partie Rapide</u><br /><br />
+      Les règles de base du jeu ne changent pas. <br /><br />
+      Si vous tombez sur l’évènement d’un autre joueur vous pouvez décider de
+      lui prendre en buvant <strong>le double de gorgées</strong> du loyer qui
+      devrait s’appliquer. Sinon vous buvez juste le loyer. <br />
+      Il est possible de <strong>gagner en possédant 3 rues !</strong>
+    </div>
+
+    <div style="clear: both"></div>
+    <hr />
+  </body>
+  <footer>
+    <div>© 2023, Cheers</div>
+  </footer>
+</html>

@@ -1,0 +1,163 @@
+/* Réinitialisation de la marge et du padding pour le corps de la page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #007b49; /* Couleur de fond de la page - vert d'un tapis de poker */
+}
+
+/* Style pour l'arrière-plan décoratif */
+.background {
+  /* background-image: url("background-decoration.jpg"); Remplacez le nom de l'image par le fichier de votre choix */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style pour le conteneur du titre */
+.title-container {
+  background-color: red; /* Fond rouge pour le titre */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #000; /* Contour noir pour le titre */
+  margin-bottom: 20px;
+}
+
+/* Style pour le titre "MonoPolytech Tirage" */
+.monopoly-title {
+  font-family: "Kabel", Arial, sans-serif;
+  font-size: 70px; /* Taille du titre agrandie à 70px */
+  text-align: center;
+  margin: 0;
+  font-weight: 700; /* Utilise la version "Bold" de la police Kabel */
+  color: #fff; /* Couleur du texte en blanc */
+  text-shadow: 3px 2px 1px #000; /* Ombre portée noire pour le titre */
+}
+
+/* Style pour le conteneur des résultats des cartes */
+.result-container {
+  background-color: #000;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #000; /* Contour noir pour les résultats des cartes */
+  margin-bottom: 20px;
+  transition: background-color 0.2s ease; /* Ajout de transition pour le changement de couleur du padding */
+}
+
+/* Style pour le conteneur des boutons */
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+/* Style pour les conteneurs des boutons BDE et Chance */
+.card-button-container {
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #000; /* Contour noir pour les boutons */
+}
+.bde {
+  background-color: #04adec;
+  color: #fff; /* Texte blanc pour le bouton BDE */
+  text-shadow: 1px 1px 2px #000;
+  border: 2px solid #000; /* Contour noir pour la case BDE */
+}
+.chance {
+  background-color: #eb6d00;
+  color: #fff; /* Texte blanc pour le bouton Chance */
+  text-shadow: 1px 1px 2px #000;
+  border: 2px solid #000; /* Contour noir pour la case Chance */
+}
+
+/* Style pour le bouton Chance */
+.chance-button {
+  background-color: #fff; /* Fond couleur chance - #EB6D00 */
+}
+
+/* Style pour le bouton BDE */
+.bde-button {
+  background-color: #fff; /* Fond couleur BDE - #04ADEC */
+}
+
+/* Style pour les boutons des cartes */
+.card-button {
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.card-button:hover {
+  opacity: 0.8;
+}
+
+/* Style pour les résultats des cartes */
+.card-result {
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  /* Supprimez la bordure si vous préférez un style sans bordure */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style pour le bouton de couleur chance */
+.chance-color {
+  background-color: #eb6d00;
+}
+
+/* Style pour le bouton de couleur BDE */
+.bde-color {
+  background-color: #04adec;
+}
+
+/* Media query pour les écrans de petite taille, tels que les smartphones */
+@media (max-width: 600px) {
+  .buttons-container {
+    flex-direction: row;
+    flex-wrap: wrap; /* Permet de passer à la ligne quand l'écran est trop petit */
+  }
+  .card-button-container {
+    flex: 1; /* Permet aux cases BDE et Chance de prendre chacune 50% de la largeur sur les petits écrans */
+    margin: 5px;
+  }
+  .monopoly-title {
+    font-size: 40px; /* Taille du titre adaptée à l'écran de petite taille */
+  }
+}
+
+/* Style pour le bouton "Règles du jeu" */
+.rules-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff; /* Fond du bouton en blanc */
+  color: #000; /* Texte en noir */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1; /* Pour afficher le bouton par-dessus d'autres éléments */
+}
+.rules-button:hover {
+  background-color: #ddd; /* Changement de couleur au survol */
+}

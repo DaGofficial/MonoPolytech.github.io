@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MonoPolytech</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kabel:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button class="rules-button" onclick="window.location.href='rules.html'">
+      Règles du jeu
+    </button>
+    <div class="background">
+      <div class="title-container">
+        <h1 class="monopoly-title">MonoPolytech</h1>
+      </div>
+      <div class="result-container">
+        <p id="result" class="card-result"></p>
+      </div>
+      <div class="buttons-container">
+        <div class="card-button-container chance">
+          <h2 class="card-type">Chance</h2>
+          <button class="card-button chance-button" onclick="tirageChance()">
+            Tirer une carte
+          </button>
+        </div>
+        <div class="card-button-container bde">
+          <h2 class="card-type">BDE</h2>
+          <button
+            class="card-button bde-button"
+            onclick="tirageCaisseCommunaute()"
+          >
+            Tirer une carte
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="passwordobf.js"></script>
+    <script src="script.js"></script>
+  </body>
+  <footer>
+    <p>© 2023, Cheers</p>
+  </footer>
+</html>

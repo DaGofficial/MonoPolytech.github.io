@@ -1,0 +1,92 @@
+/* Réinitialisation de la marge et du padding pour le corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke; /* Couleur de fond de la page - vert d'un tapis de poker */
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* Style pour l'arrière-plan décoratif */
+.background {
+    background-image: url('background-decoration.jpg'); /* Remplacez le nom de l'image par le fichier de votre choix */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*********************Page Règles du Jeu************************/
+/*Style page règles*/
+h1 {
+    text-align: center;
+}
+.title-container {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #000; /* Contour noir pour le titre */
+    margin-right: 25%;
+    margin-left: 25%;
+    background-color: #007B49;
+}
+h2 {
+    margin-top: 20px;
+}
+p {
+    margin: 10px 0;
+    text-align: justify;
+}
+/* Style pour les listes à puces */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+/* Style pour les liens */
+a {
+    text-decoration: none;
+    color: black; /* Couleur de lien */
+}
+/* Style pour les liens au survol */
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style pour le bouton "Retour" en haut à gauche */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: black; /* Couleur du lien de retour */
+    background-color: #f9f9f9; /* Fond du bouton */
+    padding: 5px 10px;
+    border: 1px solid black; /* Bordure du bouton */
+    border-radius: 5px;
+}
+/* Style pour le bouton "Retour" au survol */
+.back-button:hover {
+    background-color: black; /* Changement de couleur de fond au survol */
+    color: #f9f9f9; /* Changement de couleur du texte au survol */
+}
+
+/*3 Images*/
+.image-container {
+    display: flex;  
+}
+.image-item {
+    text-align: center; 
+    margin-left: 1.5em;
+    margin-right: 1.5em;  
+}
+
+/*Tableau*/
+table {
+    border-collapse: separate;
+    border-spacing: 10px; 
+}
