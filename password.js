@@ -65,7 +65,10 @@ function vp(password) {
   }
 }
 // if we are on the index.html page :
-if (window.location.pathname.endsWith("index.html")) {
+if (
+  window.location.pathname.endsWith("index.html") ||
+  window.location.pathname === "/"
+) {
   // Add a button to the dom that grabs the password from the input field, checks if it's valid and changes the background color accordingly
   document.getElementById("validate").addEventListener("click", function () {
     const password = document.getElementById("password").value;
