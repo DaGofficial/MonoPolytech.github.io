@@ -99,3 +99,13 @@ if (!vp(getCookie("password"))) {
     window.location.href = "index.html";
   }
 }
+
+// If the path is neither index.html nor game.html, redirect to the index.html page
+if (
+  !(
+    window.location.pathname.endsWith("index.html") ||
+    window.location.pathname.endsWith("game.html")
+  )
+) {
+  window.location.href = "index.html";
+}
