@@ -64,11 +64,24 @@ function vp(password) {
     return true;
   }
 }
+
+function load_relevant_arrays() {
+  if (vp(getCookie("password"))) {
+    // If the password is valid, load the JSON file
+    caisseCommunaute = loadArrayFromJSON("cards.json", "communaute");
+    chance = loadArrayFromJSON("cards.json", "chance");
+    // return the arrays
+    return [caisseCommunaute, chance];
+  }
+
+  return [["password invalid"], ["password invalid"]];
+}
+
+// warning : all url-related code won't work on the root path of github pages.
+// This is why the index.html page redirects to the actual url instead of the root when loaded.
+
 // if we are on the index.html page :
-if (
-  window.location.pathname.endsWith("index.html") ||
-  window.location.pathname === "/"
-) {
+if (window.location.pathname.endsWith("index.html")) {
   // Add a button to the dom that grabs the password from the input field, checks if it's valid and changes the background color accordingly
   document.getElementById("validate").addEventListener("click", function () {
     const password = document.getElementById("password").value;
@@ -87,25 +100,14 @@ if (
   });
 }
 
-// When any page is loaded, check if a correct password is stored in the cookie
-// If it is not, redirect to the index.html page.
 if (!vp(getCookie("password"))) {
-  if (
-    !(
-      window.location.pathname.endsWith("index.html") ||
-      window.location.pathname === "/"
-    )
-  ) {
+  if (!window.location.pathname.endsWith("index.html")) {
     window.location.href = "index.html";
+    console.log("redirected to index.html due to invalid password cookie");
   }
-}
-
-// If the path is neither index.html nor game.html, redirect to the index.html page
-if (
-  !(
-    window.location.pathname.endsWith("index.html") ||
-    window.location.pathname.endsWith("game.html")
-  )
-) {
-  window.location.href = "index.html";
+} else {
+  // if the password is valid and the user is on the index.html page, redirect to the game.html page
+  if (window.location.pathname.endsWith("index.html")) {
+    window.location.href = "game.html";
+  }
 }

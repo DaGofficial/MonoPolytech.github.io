@@ -1,14 +1,8 @@
 let caisseCommunaute = ["Password invalid, please try again"];
 let chance = ["Password invalid, please try again"];
 
-// get the password from the cookie
-// The getCookie function is defined in password.js
-const password = getCookie("password");
-if (vp(password)) {
-  // If the password is valid, load the JSON file
-  caisseCommunaute = loadArrayFromJSON("cards.json", "communaute");
-  chance = loadArrayFromJSON("cards.json", "chance");
-}
+// load the two arrays from the load_relevant_arrays function instead
+[caisseCommunaute, chance] = load_relevant_arrays();
 
 function loadArrayFromJSON(path, keyname) {
   // loads the JSON file at the given path. The JSON file contains an object with keyname keys.
