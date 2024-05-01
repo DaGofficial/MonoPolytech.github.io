@@ -7,12 +7,6 @@
 // parvenez à craquer le site malgré tout, je vous invite à me contacter pour me faire part de
 // vos trouvailles : pacome.renimell@gmail.com
 
-// We want to have a regex to validate a compatible password, that is hidden well enough in the final obfuscated code
-// To allow the website to hold for at least a couple weeks
-
-// Example : numbers add up to x, ascii values add up to y, order of the characters, etc.
-// While still maintaining a coherent and easy to remember form
-
 (function (_0x36b1c5, _0x1b63f7) {
   const _0x54e9f2 = _0x36b1c5();
   function _0x483168(_0xeaa980, _0x2701c3, _0x15cfee, _0x5897f7) {
