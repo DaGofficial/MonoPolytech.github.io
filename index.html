@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <script>
       // redirect to index.html if the path is the root
-      if (window.location.pathname === "/") {
+      if (window.location.pathname.endsWith("/")) {
         window.location.href = "index.html";
         console.log("automatic redirection from root to index.html");
       }
