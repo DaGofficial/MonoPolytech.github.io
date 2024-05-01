@@ -65,7 +65,7 @@ function vp(password) {
   }
 }
 // if we are on the index.html page :
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname.endsWith("/index.html")) {
   // Add a button to the dom that grabs the password from the input field, checks if it's valid and changes the background color accordingly
   document.getElementById("validate").addEventListener("click", function () {
     const password = document.getElementById("password").value;
@@ -87,7 +87,7 @@ if (window.location.pathname === "/index.html") {
 // When any page is loaded, check if a correct password is stored in the cookie
 // If it is not, redirect to the index.html page.
 if (!vp(getCookie("password"))) {
-  if (window.location.pathname !== "/index.html") {
+  if (!window.location.pathname.endsWith("/index.html")) {
     window.location.href = "index.html";
   }
 }
