@@ -161,3 +161,19 @@ body {
 .rules-button:hover {
   background-color: #ddd; /* Changement de couleur au survol */
 }
+
+.password-container {
+  font-size: 50px; /* Taille du titre agrandie à 70px */
+  text-align: center;
+  margin: 10%;
+  font-weight: 700; /* Utilise la version "Bold" de la police Kabel */
+  font-size: 50px; /* Taille du titre agrandie à 70px */
+}
+
+.password-title {
+  font-family: "Kabel", Arial, sans-serif;
+  text-align: center;
+  margin: 10;
+  color: #fff; /* Couleur du texte en blanc */
+  text-shadow: 3px 2px 1px #000; /* Ombre portée noire pour le titre */
+}
